@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    
+}
+header{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    h1{
+        font-size: 2.4rem;
+        color : #F242C1 ;
+    }
+    nav{
+        ul{
+            padding: 1em;
+            li{
+                margin-left: 1em;
+                font-size: 1.6rem;
+            }
+        }
+    
+    }
+}
+.product{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    background: #f3d4e9;
+    .product-img{
+        padding: 1.5em;
+        img{
+            width: 100%;
+            object-fit:fill;
+        }
+    }
+    .product-name{
+        font-size:2.4rem;
+        font-weight: 600;
+        padding: 4rem;
+        
+        .ayur{
+            color: green;
+        }
+        button{
+            background: #FF00A8;
+            border: none;
+            color : #fff ;
+            padding: .5em 1em;
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-top: .4em;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:focus,&:active{
+                border: none;
+            }
+
+        }
+    }
+
+}
