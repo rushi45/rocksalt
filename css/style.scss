@@ -1,75 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-li{
-    list-style-type: none;
-    display: inline-block;
-    
+li {
+  list-style-type: none;
+  display: inline-block;
 }
-header{
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
-    h1{
-        font-size: 2.4rem;
-        color : #F242C1 ;
+body{
+    background: #fcf5fa;
+}
+header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 2.4rem;
+    color: #f242c1;
+  }
+  nav {
+    ul {
+      padding: 1em;
+      li {
+        margin-left: 1em;
+        font-size: 1.6rem;
+      }
     }
-    nav{
+  }
+}
+.product {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  .product-img {
+    padding-top: 1.5em;
+    min-width: 1;
+    img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  .product-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 4rem;
+
+    .ayur {
+      color: green;
+    }
+    button {
+      background: #ff00a8;
+      border: none;
+      color: #fff;
+      padding: 0.5em 1em;
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-top: 0.4em;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:focus,
+      &:active {
+        border: none;
+      }
+    }
+  }
+}
+
+.description{
+
+    margin-top: 2em;
+    padding: 4em ;
+  background: #fff;
+    
+    div{
+        margin: auto;
+        max-width: 375px;
+        font-size: 2rem;
+        font-weight: 600;
+        font-style:oblique;
+        color: #000 ;
+        quotes: "“" "”" "‘" "’";
+        line-height: 1.2em;
+
+        &::before {
+            content: open-quote;
+            color: blueviolet;
+            font-size: 7rem ;
+            display: block;
+        }
+        
+        &::after {
+            content: close-quote;
+            color: blueviolet;
+            margin-top: 20px;
+            font-size: 7rem ;
+            display: block;
+        }
+    }
+}
+
+.benifits{
+    padding: 1em;
+    background:#f3d4e9;
+
+    h1{
+        padding: 1em;
+        font-size: 2.4rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 3rem;
+            background: #ff00a8;
+            height: .5rem;
+            border-radius: 20px;
+        }
+    }
+    ul{
+        padding: 2em;
+
+        li{
+            display: block;
+            width: auto;
+            
+            color : #000 ;
+            font-size: 2rem;
+            min-width: 300px;
+            padding: 1em;
+            font-weight :normal;
+
+            &::before{
+                content: ".";
+                height: 10px;
+                width:70px;
+                background: #ff00a8;
+                color: red;
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.ingredients{
+    padding: 1em;
+    background: #ffb3d9;
+    h1{
+        padding: 1em;
+        font-size: 2.4rem;
+        &::after{
+            content: "";
+            display: block;
+            width: 3rem;
+            background: #ff00a8;
+            height: .5rem;
+            border-radius: 20px;
+        }
+    }
+
         ul{
             padding: 1em;
             li{
-                margin-left: 1em;
-                font-size: 1.6rem;
+                padding: 1em;
+                margin: auto   ;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                text-align: center;
+                min-width: 300px;
+                background: #fff;
+                display: block;
+                margin-bottom: .3rem;
+                span{
+                    display: block;
+                    font-size: 3rem ;
+                    font-weight: 600;
+                }   
+
             }
         }
-    
-    }
-}
-.product{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    background: #f3d4e9;
-    .product-img{
-        padding: 1.5em;
-        img{
-            width: 100%;
-            object-fit:fill;
-        }
-    }
-    .product-name{
-        font-size:2.4rem;
-        font-weight: 600;
-        padding: 4rem;
-        
-        .ayur{
-            color: green;
-        }
-        button{
-            background: #FF00A8;
-            border: none;
-            color : #fff ;
-            padding: .5em 1em;
-            font-size: 1.6rem;
-            font-weight: 300;
-            margin-top: .4em;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &:focus,&:active{
-                border: none;
-            }
-
-        }
-    }
-
 }
